@@ -1,2 +1,0 @@
-BaekjoonOnlineJudge
-Python
