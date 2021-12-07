@@ -5,7 +5,7 @@ graph = []
 for _ in range(n):
     graph.append(list(input()))
 
-# 연결된 집들으 다 돌기 -> dfs ?
+# 연결된 집들을 다 돌기 -> dfs ?
 # 스택 & 재귀함수
 # return True면 ++ 하면서 연결된 집들 개수 세기
 
