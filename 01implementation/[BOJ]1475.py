@@ -1,8 +1,15 @@
-n = int(input())
+import sys
+input = sys.stdin.readline
 
-list = ['0', '1', '1', '3', '4', '5', '6', '7', '8', '9']
+N = input().rstrip()
+cnts = [0] * 9  # 0 ~ 8
 
-count = 0
+for n in N:
+    n = int(n)
+    if n == 9:
+        n = 6
+    cnts[n] += 1
 
-while True:
-    num = n % 10
+cnts[6] = (cnts[6]+1) // 2
+
+print(max(cnts))
